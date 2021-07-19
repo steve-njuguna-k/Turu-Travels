@@ -34,6 +34,10 @@
             <div class="top-panel top-panel-wide" id="js-panel">
                 <div class="wrap wrap-wide">
                     <div class="wrap_float">
+                        <div class="mode-check">
+                            <input type="checkbox" id="mode-checkbox" class="mode-checkbox-input">
+                            <label for="mode-checkbox" class="mode-checkbox-label" data-dark-title="Dark Mode" data-light-title="Light Mode"></label>
+                        </div>
                         <div class="wrap">
                             <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="logo">
                                 Turu
@@ -69,10 +73,6 @@
                             </div>
                         </div>
                         <div class="search-button" id="btn-search"></div>
-                        <div class="mode-check">
-                            <input type="checkbox" id="mode-checkbox" class="mode-checkbox-input">
-                            <label for="mode-checkbox" class="mode-checkbox-label" data-dark-title="Dark Mode" data-light-title="Light Mode"></label>
-                        </div>
                     </div>
                     <div class="socials">
                         <a class="soc-link">
