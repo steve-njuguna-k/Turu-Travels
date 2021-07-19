@@ -27,9 +27,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/checkmode.js",
+              "src/assets/js/slick.min.js",
+              "src/assets/js/jquery.arcticmodal.min.js",
+              "src/assets/js/lightgallery.js",
+              "src/assets/js/jquery.mousewheel.min.js",
+              "src/assets/js/device.min.js",
+              "src/assets/js/jquery.placeholder.label.js",
+              "src/assets/js/jquery-ui.min.js",
+              "src/assets/js/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
