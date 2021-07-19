@@ -10,10 +10,12 @@ import { BlogComponent } from './components/blog/blog.component';
 import { TourDetailsComponent } from './components/tour-details/tour-details.component';
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 import { CategoriesComponent } from './components/categories/categories.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'blog', component: BlogComponent},
+  {path: 'blog/blog-details', component: BlogDetailsComponent},
   {path: 'categories', component: CategoriesComponent},
   {path: 'contact-us', component: ContactComponent},
   {path: 'hotels', component: HotelsComponent},
@@ -32,6 +34,7 @@ export class AppRoutingModule { }
 export const routingComponents = [
   HomeComponent,
   BlogComponent,
+  BlogDetailsComponent,
   CategoriesComponent,
   ContactComponent,
   HotelsComponent,
