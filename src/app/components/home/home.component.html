@@ -20,7 +20,7 @@
                             <span></span>
                             <span></span>
                         </div>
-                        <a class="logo" href="/">
+                        <a class="logo" [routerLink]="['']" routerLinkActive="router-link-active" >
                             Turu
                         </a>
                         <div class="search-button"></div>
@@ -32,29 +32,29 @@
                 <div class="wrap wrap-wide">
                     <div class="wrap_float">
                         <div class="wrap">
-                            <a href="/" class="logo">
+                            <a [routerLink]="['']" routerLinkActive="router-link-active"  class="logo">
                                 Turu
                             </a>
                             <div class="wrap-center">
                                 <div class="menu" id="js-menu">
                                     <ul>
                                         <li>
-                                            <a href="tour-page-sidebar-left.html">Tours</a>
+                                            <a [routerLink]="['/tours']" routerLinkActive="router-link-active" >Tours</a>
                                         </li>
                                         <li>
-                                            <a href="hotel-list-sidebar-left.html">Hotels</a>
+                                            <a [routerLink]="['/hotels']" routerLinkActive="router-link-active" >Hotels</a>
                                         </li>
                                         <li>
-                                            <a href="tour-list-sidebar-left.html">Categories</a>
+                                            <a [routerLink]="['/categories']" routerLinkActive="router-link-active" >Categories</a>
                                         </li>
                                         <li>
-                                            <a href="favourites-tours-left-sidebar.html">Featured</a>
+                                            <a [routerLink]="['/featured']" routerLinkActive="router-link-active" >Featured</a>
                                         </li>
                                         <li>
-                                            <a href="archive-fullwidth-left-sidebar.html">Blog</a>
+                                            <a [routerLink]="['/blog']" routerLinkActive="router-link-active" >Blog</a>
                                         </li>
                                         <li>
-                                            <a href="contact-form.html">Contacts</a>
+                                            <a [routerLink]="['/contact-us']" routerLinkActive="router-link-active" >Contacts</a>
                                         </li>
                                     </ul>
                                 </div>

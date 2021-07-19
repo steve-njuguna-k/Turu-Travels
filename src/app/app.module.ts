@@ -37,7 +37,7 @@ import { RouterModule } from '@angular/router';
       {path: 'contact-us', component: ContactComponent},
       {path: 'hotels', component: HotelsComponent},
       {path: 'tours', component: ToursComponent},
-      {path: 'favourites', component: FavouritesComponent},
+      {path: 'featured', component: FavouritesComponent},
     ])
   ],
   providers: [],
