@@ -1,1 +1,712 @@
-<p>blog works!</p>
+<head>
+    <title>
+        Blog - Turu Travels
+    </title>
+</head>
+<body class="transition-none">
+    <div class="search-section">
+        <div class="wrap">
+            <div class="wrap_float">
+                <div class="search-form">
+                    <input type="text" class="search-input" placeholder="Search…">
+                    <button class="search-submit"></button>
+                </div>
+                <div class="search-close" id="search-close"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container page">
+        <div class="container-wrap">
+            <div class="mobile-panel">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <div class="mobile-btn" id="js-menu-open">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a class="logo" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+                            Turu
+                        </a>
+                        <div class="search-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap--dummy"></div>
+            <div class="top-panel" id="js-panel">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <div class="mode-check">
+                            <input type="checkbox" id="mode-checkbox" class="mode-checkbox-input">
+                            <label for="mode-checkbox" class="mode-checkbox-label" data-dark-title="Dark Mode" data-light-title="Light Mode"></label>
+                        </div>
+                        <div class="wrap-center">
+                            <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="logo">
+                                Turu
+                            </a>
+                            <div class="menu" id="js-menu">
+                                <ul>
+                                    <li>
+                                        <a [routerLink]="['/tours']" routerLinkActive="router-link-active" >Tours</a>
+                                    </li>
+                                    <li>
+                                        <a [routerLink]="['/hotels']" routerLinkActive="router-link-active" >Hotels</a>
+                                    </li>
+                                    <li>
+                                        <a [routerLink]="['/categories']" routerLinkActive="router-link-active" >Categories</a>
+                                    </li>
+                                    <li>
+                                        <a [routerLink]="['/featured']" routerLinkActive="router-link-active" >Featured</a>
+                                    </li>
+                                    <li>
+                                        <a [routerLink]="['/blog']" routerLinkActive="router-link-active" >Blog</a>
+                                    </li>
+                                    <li>
+                                        <a [routerLink]="['/contact-us']" routerLinkActive="router-link-active" >Contacts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="user-panel">
+                                <ul>
+                                    <li class="login-li"><a data-href="#modal-login" class="login-link getModal">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-button" id="btn-search"></div>
+                    </div>
+                    <div class="socials">
+                        <a class="soc-link">
+                            <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                        </a>
+                        <a class="soc-link">
+                            <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                        </a>
+                        <a class="soc-link">
+                            <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-close" id="js-menu-close"></div>
+                </div>
+            </div>
+            <div class="page-wrap archive-page with-sidebar left-sidebar">
+                <div class="breadcrumbs">
+                    <div class="wrap wrap-center">
+                        <div class="wrap_float">
+                            <a href="index.html">Home</a> / <a href="#">Features</a> / <span class="current">Archive Grid Left Sidebar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="archive-header">
+                    <div class="wrap wrap-center">
+                        <div class="wrap_float">
+                            <div class="title-wrap">
+                                <h1 class="page-title">Archive Grid Left Sidebar</h1>
+                                <div class="posts-count">
+                                    246 Posts
+                                </div>
+                            </div>
+                            <div class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque suscipit distinctio, pariatur quisquam ex delectus fugit corporis excepturi deserunt! Soluta voluptas in, tenetur enim esse hic eum quia quos. Rerum.
+                            </div>
+                            <div class="child-tags">
+                                <p class="p">Subcategories:</p>
+                                <div class="post-tags">
+                                    <a href="#" class="tag">Mobile</a>
+                                    <a href="#" class="tag">APP</a>
+                                    <a href="#" class="hashtag">#Device</a>
+                                    <a href="#" class="hashtag">#iPhone</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="archive-body">
+                    <div class="wrap">
+                        <div class="page-wrap-content">
+                            <div class="post-items-list posts-grid">
+                                <a href="single.html" class="post-item">
+                                    <img src="../../../assets/img/post-1-img.jpg" alt="" class="post-bg-img">
+                                    <div class="post-tags">
+                                        <div class="tag">Mobile</div>
+                                        <div class="tag">APP</div>
+                                    </div>
+                                    <h3 class="post-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, modi.
+                                    </h3>
+                                    <div class="post-info">
+                                        <div class="post-author post-info-author">
+                                            <div class="author-image">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <span>Maya Delia</span>
+                                        </div>
+                                        <div class="post-date post-info-date">
+                                            18 May 2021
+                                        </div>
+                                        <div class="post-views post-info-views">
+                                            3457
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="single.html" class="post-item">
+                                    <img src="../../../assets/img/post-2-img.jpg" alt="" class="post-bg-img">
+                                    <div class="post-tags">
+                                        <div class="tag">Mobile</div>
+                                        <div class="tag">APP</div>
+                                    </div>
+                                    <h3 class="post-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore fugit asperiores, voluptates expedita. Officia, libero!
+                                    </h3>
+                                    <div class="post-info">
+                                        <div class="post-author post-info-author">
+                                            <div class="author-image">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <span>Maya Delia</span>
+                                        </div>
+                                        <div class="post-date post-info-date">
+                                            18 May 2021
+                                        </div>
+                                        <div class="post-views post-info-views">
+                                            3457
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="single.html" class="post-item without-bg">
+                                    <div class="post-tags">
+                                        <div class="tag">Mobile</div>
+                                        <div class="tag">APP</div>
+                                    </div>
+                                    <h3 class="post-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ad, ullam!
+                                    </h3>
+                                    <div class="post-excerption">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid omnis, tenetur repellat amet voluptate velit eligendi ratione nobis est corrupti.
+                                    </div>
+                                    <div class="post-info">
+                                        <div class="post-author post-info-author">
+                                            <div class="author-image">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <span>Maya Delia</span>
+                                        </div>
+                                        <div class="post-date post-info-date">
+                                            18 May 2021
+                                        </div>
+                                        <div class="post-views post-info-views">
+                                            3457
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="single.html" class="post-item">
+                                    <img src="../../../assets/img/post-3-img.jpg" alt="" class="post-bg-img">
+                                    <div class="post-tags">
+                                        <div class="tag">Mobile</div>
+                                        <div class="tag">APP</div>
+                                    </div>
+                                    <h3 class="post-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, libero, modi.
+                                    </h3>
+                                    <div class="post-info">
+                                        <div class="post-author post-info-author">
+                                            <div class="author-image">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <span>Victor Shibut</span>
+                                        </div>
+                                        <div class="post-date post-info-date">
+                                            18 May 2021
+                                        </div>
+                                        <div class="post-views post-info-views">
+                                            3457
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="single.html" class="post-item">
+                                    <img src="../../../assets/img/post-4-img.jpg" alt="" class="post-bg-img">
+                                    <div class="post-tags">
+                                        <div class="tag">Mobile</div>
+                                        <div class="tag">APP</div>
+                                    </div>
+                                    <h3 class="post-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque!
+                                    </h3>
+                                    <div class="post-info">
+                                        <div class="post-author post-info-author">
+                                            <div class="author-image">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <span>Maya Delia</span>
+                                        </div>
+                                        <div class="post-date post-info-date">
+                                            18 May 2021
+                                        </div>
+                                        <div class="post-views post-info-views">
+                                            3457
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="single.html" class="post-item">
+                                    <img src="../../../assets/img/post-7-img.jpg" alt="" class="post-bg-img">
+                                    <div class="post-tags">
+                                        <div class="tag">Mobile</div>
+                                        <div class="tag">APP</div>
+                                    </div>
+                                    <h3 class="post-title">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ad officia perspiciatis.
+                                    </h3>
+                                    <div class="post-info">
+                                        <div class="post-author post-info-author">
+                                            <div class="author-image">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <span>Maya Delia</span>
+                                        </div>
+                                        <div class="post-date post-info-date">
+                                            18 May 2021
+                                        </div>
+                                        <div class="post-views post-info-views">
+                                            3457
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="show-more">
+                                <div class="show-more-btn">
+                                    <span>Show more</span>
+                                </div>
+                                <div class="loader">
+                                    <svg class="circular" viewBox="25 25 50 50">
+                                        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-wrap-sidebar">
+                            <div class="sidebar">
+                                <div class="sidebar-item widget_archive">
+                                    <div class="sidebar-item-title">Archive</div>
+                                    <ul>
+                                        <li><a href="#">August 2020</a>(5)</li>
+                                        <li><a href="#">November 2018</a>(5)</li>
+                                        <li><a href="#">October 2018</a>(15)</li>
+                                        <li><a href="#">January 2013</a>(5)</li>
+                                        <li><a href="#">March 2012</a>(5)</li>
+                                        <li><a href="#">January 2012</a>(5)</li>
+                                        <li><a href="#">March 2011</a>(5)</li>
+                                        <li><a href="#">October 2010</a>(5)</li>
+                                        <li><a href="#">September 2010</a>(245)</li>
+                                    </ul>
+                                </div>
+                                <div class="sidebar-item popular-posts">
+                                    <h3 class="sidebar-item-title">Popular Post</h3>
+                                    <div class="popular-posts-wrap">
+                                        <a href="single.html" class="post-item popular-posts-item">
+                                            <img src="../../../assets/img/post-1-img.jpg" alt="" class="post-bg-img">
+                                            <div class="post-tags">
+                                                <div class="tag">Mobile</div>
+                                                <div class="tag">APP</div>
+                                            </div>
+                                            <div class="post-title">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-author post-info-author">
+                                                    <div class="author-image">
+                                                        <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                                    </div>
+                                                    <span>Maya Delia</span>
+                                                </div>
+                                                <div class="post-date post-info-date">
+                                                    18 May 2021
+                                                </div>
+                                                <div class="post-views post-info-views">
+                                                    3457
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="single.html" class="post-item popular-posts-item">
+                                            <img src="../../../assets/img/post-2-img.jpg" alt="" class="post-bg-img">
+                                            <div class="post-tags">
+                                                <div class="tag">Mobile</div>
+                                                <div class="tag">APP</div>
+                                            </div>
+                                            <div class="post-title">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab saepe soluta porro.
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-author post-info-author">
+                                                    <div class="author-image">
+                                                        <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                                    </div>
+                                                    <span>Maya Delia</span>
+                                                </div>
+                                                <div class="post-date post-info-date">
+                                                    18 May 2021
+                                                </div>
+                                                <div class="post-views post-info-views">
+                                                    3457
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="single.html" class="post-item popular-posts-item">
+                                            <img src="../../../assets/img/post-3-img.jpg" alt="" class="post-bg-img">
+                                            <div class="post-tags">
+                                                <div class="tag">Mobile</div>
+                                                <div class="tag">APP</div>
+                                            </div>
+                                            <div class="post-title">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, veniam.
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="post-author post-info-author">
+                                                    <div class="author-image">
+                                                        <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                                    </div>
+                                                    <span>Maya Delia</span>
+                                                </div>
+                                                <div class="post-date post-info-date">
+                                                    18 May 2021
+                                                </div>
+                                                <div class="post-views post-info-views">
+                                                    3457
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-item widget_categories">
+                                    <h3 class="sidebar-item-title">Categories</h3>
+                                    <ul>
+                                        <li class="cat-item cat-item-2">
+                                            <a href="#">Mobile</a> (1)
+                                            <ul class="children">
+                                                <li class="cat-item cat-item-48">
+                                                    <a href="#">subcategory</a> (1)
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cat-item cat-item-196">
+                                            <a href="#">APP</a> (7)
+                                        </li>
+                                        <li class="cat-item cat-item-3">
+                                            <a href="#">Cars</a> (1)
+                                        </li>
+                                        <li class="cat-item cat-item-37"><a href="#">Parent</a> (1)
+                                            <ul class="children">
+                                                <li class="cat-item cat-item-60"><a href="#">Child 1</a> (1)
+                                                    <ul class="children">
+                                                        <li class="cat-item cat-item-61"><a href="#">Child 2</a> (1)
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="cat-item cat-item-4">
+                                            <a href="#">Cars</a> (1)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <div class="footer-top">
+                            <div class="footer-column first-column">
+                                <div class="logo">Turu</div>
+                                <div class="text">Some text</div>
+                            </div>
+                            <div class="footer-column">
+                                <div class="column-title">General</div>
+                                <ul class="footer-ul">
+                                    <li><a href="#">Contact Form</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-column">
+                                <div class="column-title">Discover</div>
+                                <ul class="footer-ul">
+                                    <li><a href="#">Tours</a></li>
+                                    <li><a href="#">Hotels</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-column contacts-column">
+                                <div class="column-title">Contact</div>
+                                <ul class="footer-ul">
+                                    <li>
+                                        Call us <br>
+                                        <a href="#" class="contacts-link">+1 4676 355 366 33</a>
+                                    </li>
+                                    <li>
+                                        Write to us <br>
+                                        <a href="#" class="contacts-link">info@helodigi.ru</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-column socials-column">
+                                <div class="socials">
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-footnote">
+                        <p class="text">© 2021 Turu. All rights reserved. <br class="br-mob"> <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </div>
+    </div>
+
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_login" id="modal-login">
+            <div class="modal_wrap">
+                <h2 class="title">Sign in</h2>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="email" class="input" placeholder="Email" required>
+                    </div>
+                    <div class="input-wrap white-label password-field">
+                        <input type="password" class="input password-input" placeholder="Password">
+                        <button class="show-password-btn"></button>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="remember-1">
+                        <label for="remember-1" class="agreement-label">
+                            <span>
+                                Remember me
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Login</span>
+                    </button>
+                    <div class="authorization-socials">
+                        <div class="authorization-socials-variants">
+                            <div class="socials">
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <p><a href="#">Forgot password?</a></p>
+                    <p>Don’t have an account? <a data-href="#modal-registration" class="getModal">Create your own right now.</a></p>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_registration" id="modal-registration">
+            <div class="modal_wrap">
+                <h2 class="title">Sign up</h2>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                    <div class="input-wrap white-label password-field">
+                        <input type="password" class="input password-input" placeholder="Password">
+                        <button class="show-password-btn"></button>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="agree-1">
+                        <label for="agree-1" class="agreement-label">
+                            <span>
+                                I accept the conditions of transmitting information
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Sign up</span>
+                    </button>
+                    <div class="authorization-socials">
+                        <div class="authorization-socials-variants">
+                            <div class="socials">
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <p>Have an account? <a href="#modal-login" class="getModal">Sign in your right now.</a></p>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_reset" id="modal-reset-password">
+            <div class="modal_wrap">
+                <h2 class="title">Forgot password?</h2>
+                <div class="subtitle">
+                    Use the e-mail and password that you specified when registering on the site
+                </div>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Reset Password</span>
+                    </button>
+                </div>
+                <div class="modal-info">
+                    <p>Don’t have an account? <a data-href="#modal-registration" class="getModal">Create your own right now.</a></p>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_success" id="modal-reset-password-success">
+            <div class="modal_wrap">
+                <div class="success-icon"></div>
+                <h2 class="title">Success</h2>
+                <div class="subtitle">
+                    Your message was successfully sent. We will contact you shortly
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_order" id="book-now">
+            <div class="modal_wrap">
+                <h2 class="title">Please fill in this quick form</h2>
+                <div class="subtitle">
+                    Your personal travel expert will get back to you in a few hours to introduce themselves and start planning an exceptional holiday experience with you.
+                </div>
+                <div class="modal-form">
+                    <div class="input-wrap date-wrap white-label">
+                        <input type="text" class="input js_calendar" placeholder="When would you like to travel?" readonly>
+                    </div>
+                    <div class="input-wrap date-wrap white-label">
+                        <input type="text" class="input js_calendar" placeholder="When do you plan to come back?" readonly>
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Surname">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="tel" class="input js-tel" placeholder="Contact Number">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="email" class="input" placeholder="Email Address">
+                    </div>
+                    <div class="input-wrap white-label fullwidth">
+                        <textarea class="input textarea" placeholder="More details about your trip"></textarea>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="agree-1b">
+                        <label for="agree-1b" class="agreement-label">
+                            <span>
+                                I accept the conditions of transmitting information
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_order" id="ask-question">
+            <div class="modal_wrap">
+                <h2 class="title">Ask a question</h2>
+                <div class="subtitle">
+                    Please fill out the form and our manager will contact you
+                </div>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Last name">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Contact Number">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Email Address">
+                    </div>
+                    <div class="input-wrap white-label fullwidth">
+                        <textarea class="input textarea" placeholder="Your question"></textarea>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="agree-1c">
+                        <label for="agree-1c" class="agreement-label">
+                            <span>
+                                I accept the conditions of transmitting information
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+
+    <div class="bottom-message success-message" id="success-message">
+        <span>
+            Thanks! Your subscription <br>has been successfully issued
+        </span>
+    </div>
+
+    <div class="bottom-message error-message" id="error-message">
+        <span>
+            Error occurred
+        </span>
+    </div>
+</body>
