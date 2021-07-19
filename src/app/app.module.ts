@@ -31,7 +31,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent},
+      {path: 'home', component: HomeComponent},
       {path: 'blog', component: BlogComponent},
       {path: 'categories', component: CategoriesComponent},
       {path: 'contact-us', component: ContactComponent},
