@@ -1,1 +1,1355 @@
-<p>hotel-details works!</p>
+<head>
+    <title>
+        Hotel Details - Turu Travels
+    </title>
+</head>
+<body class="transition-none">
+    <div class="search-section">
+        <div class="wrap">
+            <div class="wrap_float">
+                <div class="search-form">
+                    <input type="text" class="search-input" placeholder="Search…">
+                    <button class="search-submit"></button>
+                </div>
+                <div class="search-close" id="search-close"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container page">
+        <div class="container-wrap">
+            <div class="mobile-panel">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <div class="mobile-btn" id="js-menu-open">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a class="logo" href="/">
+                            Turu
+                        </a>
+                        <div class="search-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-wrap--dummy"></div>
+            <div class="top-panel top-panel-wide" id="js-panel">
+                <div class="wrap wrap-wide">
+                    <div class="wrap_float">
+                        <div class="mode-check">
+                            <input type="checkbox" id="mode-checkbox" class="mode-checkbox-input">
+                            <label for="mode-checkbox" class="mode-checkbox-label" data-dark-title="Dark Mode" data-light-title="Light Mode"></label>
+                        </div>
+                        <div class="wrap">
+                            <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="logo">
+                                Turu
+                            </a>
+                            <div class="wrap-center">
+                                <div class="menu" id="js-menu">
+                                    <ul>
+                                        <li>
+                                            <a [routerLink]="['/tours']" routerLinkActive="router-link-active" >Tours</a>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="['/hotels']" routerLinkActive="router-link-active" >Hotels</a>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="['/categories']" routerLinkActive="router-link-active" >Categories</a>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="['/featured']" routerLinkActive="router-link-active" >Featured</a>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="['/blog']" routerLinkActive="router-link-active" >Blog</a>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="['/contact-us']" routerLinkActive="router-link-active" >Contacts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="user-panel">
+                                <ul>
+                                    <li class="login-li"><a data-href="#modal-login" class="login-link getModal">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-button" id="btn-search"></div>
+                    </div>
+                    <div class="socials">
+                        <a class="soc-link">
+                            <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                        </a>
+                        <a class="soc-link">
+                            <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                        </a>
+                        <a class="soc-link">
+                            <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-close" id="js-menu-close"></div>
+                </div>
+            </div>
+            <div class="breadcrumbs">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <a href="index.html">Home</a> / <a href="#">Travel</a> / <span class="current">Hotel Single Page</span>
+                    </div>
+                </div>
+            </div>
+            <div class="single-header header-with-gallery">
+                <div class="wrap wrap-wide">
+                    <div class="wrap_float relative">
+                        <div class="wrap">
+                            <div class="wrap_float">
+                                <div class="header-gallery-slider lightgallery-on" id="js-header-gallery-slider">
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-1.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-2.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-1.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-2.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-1.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-2.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-1.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="../../../assets/img/hotel-2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-wrap with-sidebar">
+                <div class="page-wrap-content">
+                    <div class="post-single-wrap sticky-parent">
+                        <div class="share-block">
+                            <div class="share-block-main js-share-block-main">
+                                <div class="socials">
+                                    <a class="soc-link" data-title="Facebook">
+                                        <span class="soc-icon">
+                                            <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                        </span>
+                                    </a>
+                                    <a class="soc-link" data-title="Twitter">
+                                        <span class="soc-icon">
+                                            <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                        </span>
+                                    </a>
+                                    <a class="soc-link" data-title="Pinterest">
+                                        <span class="soc-icon">
+                                            <img src="../../../assets/img/pinterest-icon.svg" class="img-svg" alt="">
+                                        </span>
+                                    </a>
+                                    <a class="soc-link" data-title="Behance">
+                                        <span class="soc-icon">
+                                            <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                                        </span>
+                                    </a>
+                                    <div class="soc-link show-more-socials" style="display: none;"></div>
+                                </div>
+                                <div class="share-block-item js-anchor link-to-comments" data-href="#comments-section">
+                                    <div class="comments-count">
+                                        <span>234</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="share-block-item mobile-item js-mobile-share-show mobile-share-show-btn">
+                                <div class="show-mobile-icon"></div>
+                            </div>
+                            <div class="share-block-item add-to-favorites">
+                                <div class="favorites-tag js-add-to-fav">
+                                    <i class="is-added bouncy"></i>
+                                    <i class="not-added bouncy"></i>
+                                    <span class="fav-overlay"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-content wp-content">
+                            <div class="wrap wrap-center">
+                                <div class="wrap_float">
+                                    <div class="location location-in-title">Nordegg, Canada</div>
+                                    <h1 class="page-title large-title">
+                                        Pueblo Bonito
+                                    </h1>
+                                    <div class="post-description">
+                                        However, it should not be forgotten that the scope and location of training require defining.
+                                    </div>
+                                    <div class="features">
+                                        <div class="features-item">
+                                            <div class="features-item-icon">
+                                                <img src="../../../assets/img/airplane.svg" alt="">
+                                            </div>
+                                            <div class="features-item-title">
+                                                Best time to travel
+                                            </div>
+                                            <div class="features-item-subtitle">
+                                                Spring, summer
+                                            </div>
+                                        </div>
+                                        <div class="features-item">
+                                            <div class="features-item-icon">
+                                                <img src="../../../assets/img/calendar.svg" alt="">
+                                            </div>
+                                            <div class="features-item-title">
+                                                When To Go
+                                            </div>
+                                            <div class="features-item-subtitle">
+                                                All Year
+                                            </div>
+                                        </div>
+                                        <div class="features-item">
+                                            <div class="features-item-icon">
+                                                <img src="../../../assets/img/timer.svg" alt="">
+                                            </div>
+                                            <div class="features-item-title">
+                                                Ideal Length
+                                            </div>
+                                            <div class="features-item-subtitle">
+                                                10 days+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        However, it should not be forgotten that the scope and location of training require defining and refining the development model. On the other hand, constant quantitative growth and the scope of our activity plays an important role in the formation of new offers. However, it should not be forgotten that the implementation of planned tasks plays an important role in shaping the positions taken by participants in relation to the tasks set.
+                                    </p>
+                                    <ul class="checklist-ul">
+                                        <li>
+                                            Lorem ipsum dolor sit amet.
+                                        </li>
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                        </li>
+                                        <li class="disable-li">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut.
+                                        </li>
+                                        <li class="plus-li">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                        </li>
+                                    </ul>
+                                    <h2>Youtube</h2>
+                                    <div class="video-block">
+                                        <div class="video-wrap">
+                                            <iframe width="560" height="315" src="../../../assets/https://www.youtube.com/embed/F5e9rZg0CjI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <span class="caption-text">Lorem ipsum dolor sit amet, consectetur.</span>
+                                    </div>
+                                    <h2>Grid</h2>
+                                    <div>
+                                        <div class="block-columns gallery-columns grid lightgallery-on">
+                                            <div class="block-column">
+                                                <figure class="block-caption img-caption">
+                                                    <button class="zoom-btn"></button>
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/img/article-5.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="block-column">
+                                                <figure class="block-caption img-caption">
+                                                    <button class="zoom-btn"></button>
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/img/article-4.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="block-column">
+                                                <figure class="block-caption img-caption">
+                                                    <button class="zoom-btn"></button>
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/img/article-3.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="block-column">
+                                                <figure class="block-caption img-caption">
+                                                    <button class="zoom-btn"></button>
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/img/article-2.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="block-column">
+                                                <figure class="block-caption img-caption">
+                                                    <button class="zoom-btn"></button>
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/img/tour-1.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="block-column">
+                                                <figure class="block-caption img-caption">
+                                                    <button class="zoom-btn"></button>
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/img/tour-3.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="block-column">
+                                                <figure class="block-caption img-caption">
+                                                    <button class="zoom-btn"></button>
+                                                    <div class="img-wrap">
+                                                        <img src="../../../assets/img/tour-2.jpg" alt="">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2>Standart</h2>
+                                    <div class="accordion-block">
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-title flex">
+                                                <span>
+                                                    Day 1: Arrival
+                                                </span>
+                                                <span class="time">
+                                                    8:00 am to 10:00 am
+                                                </span>
+                                            </div>
+                                            <div class="accordion-item-content">
+                                                <img src="../../../assets/img/tour-1.jpg" alt="">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus magnam quis aspernatur incidunt, impedit, ut excepturi corporis vitae expedita reiciendis nam quae quisquam facere harum modi dolorem? Sapiente animi autem eligendi itaque natus dolore eum quisquam vero, eaque molestias unde inventore ea quaerat voluptatum harum. Repellendus!
+                                                </p>
+                                                <ul class="checklist-ul">
+                                                    <li class="plus-li">
+                                                        Lorem ipsum dolor sit amet.
+                                                    </li>
+                                                    <li class="plus-li">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut.
+                                                    </li>
+                                                    <li class="plus-li">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-title flex">
+                                                <span>
+                                                    Day 2: Journey to the Forest
+                                                </span>
+                                                <span class="time">
+                                                    8:00 am to 10:00 am
+                                                </span>
+                                            </div>
+                                            <div class="accordion-item-content">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores saepe minus suscipit, ipsam corporis! Optio et eveniet ex consequuntur impedit est architecto harum fugit eum, alias quae quasi error libero voluptates debitis porro dicta nesciunt molestiae. Iure repudiandae, enim debitis reiciendis, praesentium itaque eveniet officia ea, totam doloremque adipisci ratione?
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet.
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eaque, ducimus animi repellendus fuga sed, autem ipsa labore iure amet perferendis, beatae assumenda, optio.
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-title flex">
+                                                <span>
+                                                    Day 3: Journey to the Forest
+                                                </span>
+                                                <span class="time">
+                                                    8:00 am to 10:00 am
+                                                </span>
+                                            </div>
+                                            <div class="accordion-item-content">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ullam nisi sed, minima facere blanditiis, voluptates eos consequuntur illo ipsum nobis culpa qui dolor?
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur.
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid veniam est cupiditate.
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur.
+                                                    </li>
+                                                    <li>
+                                                        Lorem ipsum dolor sit amet, consectetur.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2>Location on the map</h2>
+                                    <div class="map-block">
+                                        <iframe src="../../../assets/https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=New%20York+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"></iframe>
+                                    </div>
+                                    <div class="packages-slider-block js-slider-block">
+                                        <div class="section-head">
+                                            <h2>
+                                                Check out the hotels in this location
+                                            </h2>
+                                            <div class="arrows">
+                                                <div class="arrow prev"></div>
+                                                <div class="arrow next"></div>
+                                            </div>
+                                        </div>
+                                        <div class="section-content">
+                                            <div class="packages-slider single-packages-slider">
+                                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                                    <div class="shadow js-shadow"></div>
+                                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-1.jpg)"></div>
+                                                    <div class="packages-item-head">
+                                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                                        <div class="favorites-tag added js-add-to-fav">
+                                                            <i class="is-added bouncy"></i>
+                                                            <i class="not-added bouncy"></i>
+                                                            <span class="fav-overlay"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="packages-item-foot">
+                                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                                        <div class="location">United States, San Francisco</div>
+                                                    </div>
+                                                </a>
+                                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                                    <div class="shadow js-shadow"></div>
+                                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-2.jpg)"></div>
+                                                    <div class="packages-item-head">
+                                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                                        <div class="favorites-tag added js-add-to-fav">
+                                                            <i class="is-added bouncy"></i>
+                                                            <i class="not-added bouncy"></i>
+                                                            <span class="fav-overlay"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="packages-item-foot">
+                                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                                        <div class="location">United States, San Francisco</div>
+                                                    </div>
+                                                </a>
+                                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                                    <div class="shadow js-shadow"></div>
+                                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-3.jpg)"></div>
+                                                    <div class="packages-item-head">
+                                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                                        <div class="favorites-tag added js-add-to-fav">
+                                                            <i class="is-added bouncy"></i>
+                                                            <i class="not-added bouncy"></i>
+                                                            <span class="fav-overlay"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="packages-item-foot">
+                                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                                        <div class="location">United States, San Francisco</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-results">
+                                        <div class="rating-results-list">
+                                            <div class="rating-results-item">
+                                                <div class="rating-results-item-info">
+                                                    <div class="_title">Food</div>
+                                                    <div class="_value">50%</div>
+                                                </div>
+                                                <div class="rating-results-item-progress">
+                                                    <div class="line" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rating-results-item">
+                                                <div class="rating-results-item-info">
+                                                    <div class="_title">Transport</div>
+                                                    <div class="_value">90%</div>
+                                                </div>
+                                                <div class="rating-results-item-progress">
+                                                    <div class="line" style="width: 90%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rating-results-item">
+                                                <div class="rating-results-item-info">
+                                                    <div class="_title">Impressions</div>
+                                                    <div class="_value">70%</div>
+                                                </div>
+                                                <div class="rating-results-item-progress">
+                                                    <div class="line" style="width: 70%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="rating-results-item">
+                                                <div class="rating-results-item-info">
+                                                    <div class="_title">Comfort</div>
+                                                    <div class="_value">60%</div>
+                                                </div>
+                                                <div class="rating-results-item-progress">
+                                                    <div class="line" style="width: 60%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rating-results-total">
+                                            <div class="total-value">4.8</div>
+                                            <div class="subtitle">
+                                                Total score
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-section" id="comments-section">
+                        <div class="wrap wrap-center">
+                            <div class="wrap_float">
+                                <h2 class="title">Comments <span class="comments-count">234</span></h2>
+                                <div class="subtitle">Please rate the trip</div>
+                                <div class="set-rating-block">
+                                    <div class="set-rating-item">
+                                        <div class="_title">Food</div>
+                                        <div class="rating-stars js-rating-stars">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                        </div>
+                                        <div class="rating-value">4.5</div>
+                                    </div>
+                                    <div class="set-rating-item">
+                                        <div class="_title">Transport</div>
+                                        <div class="rating-stars js-rating-stars">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                        </div>
+                                        <div class="rating-value">4.5</div>
+                                    </div>
+                                    <div class="set-rating-item">
+                                        <div class="_title">Impressions</div>
+                                        <div class="rating-stars js-rating-stars">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                        </div>
+                                        <div class="rating-value">4.5</div>
+                                    </div>
+                                    <div class="set-rating-item">
+                                        <div class="_title">Comfort</div>
+                                        <div class="rating-stars js-rating-stars">
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                        </div>
+                                        <div class="rating-value">4.5</div>
+                                    </div>
+                                </div>
+                                <div class="comments-form">
+                                    <div class="input-wrap textarea-wrap white-label comment-field">
+                                        <textarea class="input textarea" placeholder="Write a comment"></textarea>
+                                    </div>
+                                    <div class="input-wrap white-label name-field">
+                                        <input type="text" class="input" placeholder="Name*">
+                                    </div>
+                                    <div class="input-wrap white-label email-field">
+                                        <input type="email" class="input" placeholder="Email*">
+                                    </div>
+                                    <div class="agreement">
+                                        <input type="checkbox" class="agreement-checkbox" id="agreeement-2">
+                                        <label for="agreeement-2" class="agreement-label">
+                                            <span>
+                                                Save my name and email in this browser for the next time I comment
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <button class="btn submit submit-btn">
+                                        <span>Post Comment</span>
+                                    </button>
+                                </div>
+                                <div class="comments-list">
+                                    <div class="comments-list-item">
+                                        <div class="comment-item">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/man.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Victor Shibut</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-user-ratings">
+                                                <span class="user-rating-result">Food: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Transport: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Impressions: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Comfort: <span class="val">4.5</span></span>
+                                            </div>
+                                            <div class="comment-item-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ea, quaerat quos eos assumenda incidunt ipsa corporis, eveniet quis temporibus officia esse quod cupiditate.
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                        <div class="comment-item reply">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Maya Delia</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-reply-for">Responded to the user: Victor Shibut</div>
+                                            <div class="comment-item-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt quam quasi praesentium perferendis voluptates, pariatur sit, officiis cum debitis non quos facilis, unde? Soluta tempora itaque qui, pariatur quo reiciendis rem quia. Rerum, recusandae, eveniet. Sunt molestiae, temporibus nemo.
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                        <div class="comment-item reply">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Maya Delia</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-reply-for">Responded to the user: Victor Shibut</div>
+                                            <div class="comment-item-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores vitae reiciendis officia, libero! Maiores expedita modi, officia vero cupiditate ipsam id dignissimos soluta voluptatibus. Reiciendis ipsa iste inventore quod beatae, voluptate ipsam aliquid, repellendus sint quam neque est totam ratione vel et, commodi. Fugit eum unde dolores rem excepturi, blanditiis voluptas adipisci voluptatibus cupiditate, porro ad sequi, officia accusantium tempore.
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-list-item">
+                                        <div class="comment-item">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Maya Delia</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-user-ratings">
+                                                <span class="user-rating-result">Food: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Transport: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Impressions: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Comfort: <span class="val">4.5</span></span>
+                                            </div>
+                                            <div class="comment-item-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, repudiandae, suscipit. Quod, atque! Temporibus!
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                        <div class="comment-item reply">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/man.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Victor Shibut</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-reply-for">Responded to the user: Maya Delia</div>
+                                            <div class="comment-item-text">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dolorem error voluptatum commodi in quae.
+                                                </p>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius fugit blanditiis esse eum aliquid, iusto perferendis non beatae a necessitatibus reiciendis eveniet officia nulla incidunt soluta alias hic sunt voluptas, debitis modi minima culpa dolore. Excepturi deserunt harum possimus et eum mollitia ipsam saepe, totam voluptates ad consequuntur aspernatur odit quisquam eius!
+                                                </p>
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                        <div class="comment-item reply">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/man.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Victor Shibut</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-reply-for">Responded to the user: Maya Delia</div>
+                                            <div class="comment-item-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae omnis enim dignissimos atque vel. Quia, nisi, voluptas. Doloribus, illo!
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-list-item">
+                                        <div class="comment-item">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Maya Delia</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-user-ratings">
+                                                <span class="user-rating-result">Food: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Transport: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Impressions: <span class="val">4.5</span></span>
+                                                <span class="user-rating-result">Comfort: <span class="val">4.5</span></span>
+                                            </div>
+                                            <div class="comment-item-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit maiores, quas beatae commodi delectus nihil illum, labore porro, facilis temporibus, cum! Voluptates, unde, at!
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                    </div>
+                                    <div class="comments-list-item">
+                                        <div class="comment-item">
+                                            <div class="comment-item-userpic">
+                                                <img src="../../../assets/img/man.jpg" alt="" class="image-cover">
+                                            </div>
+                                            <div class="comment-item-name">Victor Shibut</div>
+                                            <div class="comment-item-date">17.04.20, 15:30</div>
+                                            <div class="comment-item-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            </div>
+                                            <div class="reply-link">Reply</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="show-more">
+                                    <div class="show-more-btn">
+                                        <span>Show more</span>
+                                    </div>
+                                    <div class="loader">
+                                        <svg class="circular" viewBox="25 25 50 50">
+                                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-wrap-sidebar">
+                    <div class="sidebar">
+                        <div class="sidebar-item widget_tour">
+                            <h4 class="_title">From $2,212 night</h4>
+                            <div class="text">
+                                We’ll search for the best rates, so you don’t have to
+                            </div>
+                            <div class="form order-form">
+                                <div class="form-fields">
+                                    <div class="input-wrap date-wrap">
+                                        <input type="text" class="input js_calendar" placeholder="Check-in">
+                                    </div>
+                                    <div class="input-wrap date-wrap">
+                                        <input type="text" class="input js_calendar" placeholder="Check-out">
+                                    </div>
+                                    <div class="input-wrap fullwidth">
+                                        <input type="text" class="input" placeholder="Name">
+                                    </div>
+                                    <div class="input-wrap fullwidth">
+                                        <input type="email" class="input" placeholder="Email">
+                                    </div>
+                                    <div class="input-wrap fullwidth">
+                                        <input type="tel" class="input" placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <button class="btn submit-btn">
+                                    <span>Book now</span>
+                                </button>
+                            </div>
+                            <div class="get-in-touch">
+                                <p class="text">Get in touch for more information or to arrange a one-to-one consultation.</p>
+                                <button class="btn transparent-btn getModal" data-href="#ask-question">
+                                    <span>Ask a question</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sidebar-item widget_instagram">
+                            <div class="sidebar-item-title">Instagram Sidebar</div>
+                            <div class="inst-block">
+                                <div class="inst-block-head">
+                                    <div class="inst-block-head-userpic">
+
+                                    </div>
+                                    <div class="inst-block-head-username">helloDigi</div>
+                                    <div class="inst-block-head-followers">24 Followers</div>
+                                </div>
+                                <div class="inst-block-posts">
+                                    <a class="inst-block-posts-item">
+                                        <img src="../../../assets/img/gallery-1.jpg" alt="">
+                                    </a>
+                                    <a class="inst-block-posts-item">
+                                        <img src="../../../assets/img/post-preview.jpg" alt="">
+                                    </a>
+                                    <a class="inst-block-posts-item">
+                                        <img src="../../../assets/img/gallery-1.jpg" alt="">
+                                    </a>
+                                    <a class="inst-block-posts-item">
+                                        <img src="../../../assets/img/post-preview.jpg" alt="">
+                                    </a>
+                                    <a class="inst-block-posts-item">
+                                        <img src="../../../assets/img/gallery-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <a class="btn inst-block-btn">
+                                    <span>Follow</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sidebar-item widget_twitter">
+                            <div class="sidebar-item-title">Recent Tweets</div>
+                            <div class="twitter-block">
+                                <div class="twitter-block-posts">
+                                    <div class="twitter-block-posts-item">
+                                        <p class="twitter-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nobis quisquam, vitae officiis! Cupiditate quaerat aliquam perferendis perspiciatis consectetur reiciendis earum, harum tempore, adipisci itaque hic rerum, similique ea amet... <a href="#">https://twitter.com/</a>
+                                        </p>
+                                        <div class="twitter-time">
+                                            244 days ago
+                                        </div>
+                                    </div>
+                                    <div class="twitter-block-posts-item">
+                                        <p class="twitter-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aut distinctio tempora, beatae quo autem, veniam quia, dolorum excepturi voluptates tenetur! <a href="#">https://twitter.com/</a>
+                                        </p>
+                                        <div class="twitter-time">
+                                            244 days ago
+                                        </div>
+                                    </div>
+                                    <div class="twitter-block-posts-item">
+                                        <p class="twitter-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint porro dolores, hic inventore, debitis eum quae, libero maiores non adipisci a. Nihil, dignissimos. <a href="#">https://twitter.com/</a>
+                                        </p>
+                                        <div class="twitter-time">
+                                            244 days ago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="packages-section section center-title-section js-slider-block">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <div class="section-head">
+                            <h2 class="title">You may like it</h2>
+                            <div class="arrows">
+                                <div class="arrow prev"></div>
+                                <div class="arrow next"></div>
+                            </div>
+                        </div>
+                        <div class="section-content">
+                            <div class="packages-slider fullwidth">
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-1.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag added js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-7.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-3.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-2.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="see-also-section section">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <h2 class="title">
+                            Related Posts
+                        </h2>
+                        <div class="section-content">
+                            <div class="see-also-items">
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-1.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag added js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-7.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-3.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-2.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-7.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                                <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <div class="shadow js-shadow"></div>
+                                    <div class="bg-img" style="background-image: url(../../../assets/img/tour-3.jpg)"></div>
+                                    <div class="packages-item-head">
+                                        <div class="packages-cost"><span class="days">5 days</span> from <span class="cost-val">$2,212</span> / pp</div>
+                                        <div class="favorites-tag js-add-to-fav">
+                                            <i class="is-added bouncy"></i>
+                                            <i class="not-added bouncy"></i>
+                                            <span class="fav-overlay"></span>
+                                        </div>
+                                    </div>
+                                    <div class="packages-item-foot">
+                                        <h3 class="packages-title">Magic Forests of Sweden</h3>
+                                        <div class="location">United States, San Francisco</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="instagram-section section">
+                <div class="wrap">
+                    <div class="wrap_float instagram-posts-list standart" id="instagram-posts">
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-1.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-2.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-3.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-4.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-5.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-6.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-7.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-8.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-9.jpg" alt="">
+                        </a>
+                        <a href="#" class="instagram-post-item">
+                            <img src="../../../assets/img/inst-10.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="wrap">
+                    <div class="wrap_float">
+                        <div class="footer-top">
+                            <div class="footer-column first-column">
+                                <div class="logo">Turu Travels</div>
+                                <div class="text">Enjoy exclusive offers on various travel destinations at discounted prices.</div>
+                            </div>
+                            <div class="footer-column">
+                                <div class="column-title">General</div>
+                                <ul class="footer-ul">
+                                    <li><a [routerLink]="['/contact-us']" routerLinkActive="router-link-active" >Contact Us</a></li>
+                                    <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active" >Blog</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-column">
+                                <div class="column-title">Discover</div>
+                                <ul class="footer-ul">
+                                    <li><a [routerLink]="['/tours']" routerLinkActive="router-link-active" >Tours</a></li>
+                                    <li><a [routerLink]="['/hotels']" routerLinkActive="router-link-active" >Hotels</a></li>
+                                    <li><a [routerLink]="['/featured']" routerLinkActive="router-link-active" >Featured</a></li>
+                                    <li><a [routerLink]="['/categories']" routerLinkActive="router-link-active" >Categories</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-column contacts-column">
+                                <div class="column-title">Contact</div>
+                                <ul class="footer-ul">
+                                    <li>
+                                        Call us <br>
+                                        <a href="#" class="contacts-link">+254 712 345 678</a>
+                                    </li>
+                                    <li>
+                                        Write to us <br>
+                                        <a href="#" class="contacts-link">info@turutravels.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-column socials-column">
+                                <div class="socials">
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/vimeo-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                    <a href="#" class="soc-link">
+                                        <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-footnote">
+                        <p class="text">© 2021 Turu. All rights reserved. <br class="br-mob"> <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+        </div>
+    </div>
+
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_login" id="modal-login">
+            <div class="modal_wrap">
+                <h2 class="title">Sign in</h2>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="email" class="input" placeholder="Email" required>
+                    </div>
+                    <div class="input-wrap white-label password-field">
+                        <input type="password" class="input password-input" placeholder="Password">
+                        <button class="show-password-btn"></button>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="remember-1">
+                        <label for="remember-1" class="agreement-label">
+                            <span>
+                                Remember me
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Login</span>
+                    </button>
+                    <div class="authorization-socials">
+                        <div class="authorization-socials-variants">
+                            <div class="socials">
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <p><a href="#">Forgot password?</a></p>
+                    <p>Don’t have an account? <a data-href="#modal-registration" class="getModal">Create your own right now.</a></p>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_registration" id="modal-registration">
+            <div class="modal_wrap">
+                <h2 class="title">Sign up</h2>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                    <div class="input-wrap white-label password-field">
+                        <input type="password" class="input password-input" placeholder="Password">
+                        <button class="show-password-btn"></button>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="agree-1">
+                        <label for="agree-1" class="agreement-label">
+                            <span>
+                                I accept the conditions of transmitting information
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Sign up</span>
+                    </button>
+                    <div class="authorization-socials">
+                        <div class="authorization-socials-variants">
+                            <div class="socials">
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/facebook-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/twitter-soc-icon.svg" class="img-svg" alt="">
+                                </div>
+                                <div class="soc-link">
+                                    <img src="../../../assets/img/behance-icon.svg" class="img-svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <p>Have an account? <a href="#modal-login" class="getModal">Sign in your right now.</a></p>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_reset" id="modal-reset-password">
+            <div class="modal_wrap">
+                <h2 class="title">Forgot password?</h2>
+                <div class="subtitle">
+                    Use the e-mail and password that you specified when registering on the site
+                </div>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Email">
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Reset Password</span>
+                    </button>
+                </div>
+                <div class="modal-info">
+                    <p>Don’t have an account? <a data-href="#modal-registration" class="getModal">Create your own right now.</a></p>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_success" id="modal-reset-password-success">
+            <div class="modal_wrap">
+                <div class="success-icon"></div>
+                <h2 class="title">Success</h2>
+                <div class="subtitle">
+                    Your message was successfully sent. We will contact you shortly
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_order" id="book-now">
+            <div class="modal_wrap">
+                <h2 class="title">Please fill in this quick form</h2>
+                <div class="subtitle">
+                    Your personal travel expert will get back to you in a few hours to introduce themselves and start planning an exceptional holiday experience with you.
+                </div>
+                <div class="modal-form">
+                    <div class="input-wrap date-wrap white-label">
+                        <input type="text" class="input js_calendar" placeholder="When would you like to travel?" readonly>
+                    </div>
+                    <div class="input-wrap date-wrap white-label">
+                        <input type="text" class="input js_calendar" placeholder="When do you plan to come back?" readonly>
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Surname">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="tel" class="input js-tel" placeholder="Contact Number">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="email" class="input" placeholder="Email Address">
+                    </div>
+                    <div class="input-wrap white-label fullwidth">
+                        <textarea class="input textarea" placeholder="More details about your trip"></textarea>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="agree-1b">
+                        <label for="agree-1b" class="agreement-label">
+                            <span>
+                                I accept the conditions of transmitting information
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="modal modal_default modal_order" id="ask-question">
+            <div class="modal_wrap">
+                <h2 class="title">Ask a question</h2>
+                <div class="subtitle">
+                    Please fill out the form and our manager will contact you
+                </div>
+                <div class="modal-form">
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Name">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Last name">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Contact Number">
+                    </div>
+                    <div class="input-wrap white-label">
+                        <input type="text" class="input" placeholder="Email Address">
+                    </div>
+                    <div class="input-wrap white-label fullwidth">
+                        <textarea class="input textarea" placeholder="Your question"></textarea>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement-checkbox" id="agree-1c">
+                        <label for="agree-1c" class="agreement-label">
+                            <span>
+                                I accept the conditions of transmitting information
+                            </span>
+                        </label>
+                    </div>
+                    <button class="btn submit-btn">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal_close"></div>
+        </div>
+    </div>
+
+
+    <div class="bottom-message success-message" id="success-message">
+        <span>
+            Thanks! Your subscription <br>has been successfully issued
+        </span>
+    </div>
+
+    <div class="bottom-message error-message" id="error-message">
+        <span>
+            Error occurred
+        </span>
+    </div>
+</body>

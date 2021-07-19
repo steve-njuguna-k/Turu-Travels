@@ -17,7 +17,9 @@ const routes: Routes = [
   {path: 'categories', component: CategoriesComponent},
   {path: 'contact-us', component: ContactComponent},
   {path: 'hotels', component: HotelsComponent},
+  {path: 'hotels/hotel-details', component: HotelDetailsComponent},
   {path: 'tours', component: ToursComponent},
+  {path: 'tours/tour-details', component: TourDetailsComponent},
   {path: 'featured', component: FavouritesComponent},
   {path: '**', component: HomeComponent}
 ];
@@ -34,5 +36,7 @@ export const routingComponents = [
   ContactComponent,
   HotelsComponent,
   ToursComponent,
-  FavouritesComponent
+  FavouritesComponent,
+  HotelDetailsComponent,
+  TourDetailsComponent
 ]
