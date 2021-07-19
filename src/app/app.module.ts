@@ -8,6 +8,11 @@ import { ToursComponent } from './components/tours/tours.component';
 import { HotelsComponent } from './components/hotels/hotels.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FavouritesComponent } from './components/favourites/favourites.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { TourDetailsComponent } from './components/tour-details/tour-details.component';
+import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,11 +21,24 @@ import { FavouritesComponent } from './components/favourites/favourites.componen
     ToursComponent,
     HotelsComponent,
     ContactComponent,
-    FavouritesComponent
+    FavouritesComponent,
+    BlogComponent,
+    TourDetailsComponent,
+    HotelDetailsComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'blog', component: BlogComponent},
+      {path: 'categories', component: CategoriesComponent},
+      {path: 'contact-us', component: ContactComponent},
+      {path: 'hotels', component: HotelsComponent},
+      {path: 'tours', component: ToursComponent},
+      {path: 'favourites', component: FavouritesComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
