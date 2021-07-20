@@ -1,5 +1,7 @@
 <head>
-    <title>Tours - Turu Travels</title>
+    <title>
+        Hotels - Turu Travels
+    </title>
 </head>
 <body class="transition-none">
     <div class="search-section">
@@ -23,7 +25,7 @@
                             <span></span>
                             <span></span>
                         </div>
-                        <a class="logo" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+                        <a class="logo" href="/">
                             Turu
                         </a>
                         <div class="search-button"></div>
@@ -88,7 +90,7 @@
                     <div class="menu-close" id="js-menu-close"></div>
                 </div>
             </div>
-            <div class="page-wrap archive-page with-sidebar left-sidebar">
+            <div class="page-wrap archive-page">
                 <div class="breadcrumbs breadcrumbs-wide">
                     <div class="wrap">
                         <div class="wrap_float">
@@ -107,7 +109,7 @@
                                         </div>
                                         <span>Tours (234)</span>
                                     </a>
-                                    <a href="hotel-list-fullwidth.html" class="archive-tab with-icon hotels-tab">
+                                    <a [routerLink]="['/hotels']" routerLinkActive="router-link-active" class="archive-tab with-icon hotels-tab">
                                         <div class="tab-icon">
                                             <img src="../../../assets/img/hotel-icon.svg" class="img-svg" alt="">
                                         </div>
@@ -122,6 +124,7 @@
                                     </select>
                                 </div>
                             </div>
+
                             <div class="filter-overlay"></div>
                             <div class="filter-panel">
                                 <div class="filter-item">
@@ -271,7 +274,7 @@
                             </div>
                             <div class="page-wrap-content">
                                 <div class="packages-archive">
-                                    <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <a [routerLink]="['/tours/tour-details']" routerLinkActive="router-link-active" class="packages-item">
                                         <div class="shadow js-shadow"></div>
                                         <div class="bg-img" style="background-image: url(../../../assets/img/tour-1.jpg)"></div>
                                         <div class="packages-item-head">
@@ -287,7 +290,7 @@
                                             <div class="location">United States, San Francisco</div>
                                         </div>
                                     </a>
-                                    <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <a [routerLink]="['/tours/tour-details']" routerLinkActive="router-link-active" class="packages-item">
                                         <div class="shadow js-shadow"></div>
                                         <div class="bg-img" style="background-image: url(../../../assets/img/tour-7.jpg)"></div>
                                         <div class="packages-item-head">
@@ -303,7 +306,7 @@
                                             <div class="location">United States, San Francisco</div>
                                         </div>
                                     </a>
-                                    <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <a [routerLink]="['/tours/tour-details']" routerLinkActive="router-link-active" class="packages-item">
                                         <div class="shadow js-shadow"></div>
                                         <div class="bg-img" style="background-image: url(../../../assets/img/tour-3.jpg)"></div>
                                         <div class="packages-item-head">
@@ -319,7 +322,7 @@
                                             <div class="location">United States, San Francisco</div>
                                         </div>
                                     </a>
-                                    <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <a [routerLink]="['/tours/tour-details']" routerLinkActive="router-link-active" class="packages-item">
                                         <div class="shadow js-shadow"></div>
                                         <div class="bg-img" style="background-image: url(../../../assets/img/tour-2.jpg)"></div>
                                         <div class="packages-item-head">
@@ -335,7 +338,7 @@
                                             <div class="location">United States, San Francisco</div>
                                         </div>
                                     </a>
-                                    <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <a [routerLink]="['/tours/tour-details']" routerLinkActive="router-link-active" class="packages-item">
                                         <div class="shadow js-shadow"></div>
                                         <div class="bg-img" style="background-image: url(../../../assets/img/tour-5.jpg)"></div>
                                         <div class="packages-item-head">
@@ -351,7 +354,7 @@
                                             <div class="location">United States, San Francisco</div>
                                         </div>
                                     </a>
-                                    <a href="tour-page-sidebar-right.html" class="packages-item">
+                                    <a [routerLink]="['/tours/tour-details']" routerLinkActive="router-link-active" class="packages-item">
                                         <div class="shadow js-shadow"></div>
                                         <div class="bg-img" style="background-image: url(../../../assets/img/tour-6.jpg)"></div>
                                         <div class="packages-item-head">
@@ -376,101 +379,6 @@
                                         <span class="pag-link extend">...</span>
                                         <a href="#" class="pag-link">33</a>
                                         <a href="#" class="pag-link">34</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page-wrap-sidebar">
-                                <div class="sidebar">
-                                    <div class="sidebar-item widget_archive">
-                                        <div class="sidebar-item-title">Archive</div>
-                                        <ul>
-                                            <li><a href="#">August 2020</a>(5)</li>
-                                            <li><a href="#">November 2018</a>(5)</li>
-                                            <li><a href="#">October 2018</a>(15)</li>
-                                            <li><a href="#">January 2013</a>(5)</li>
-                                            <li><a href="#">March 2012</a>(5)</li>
-                                            <li><a href="#">January 2012</a>(5)</li>
-                                            <li><a href="#">March 2011</a>(5)</li>
-                                            <li><a href="#">October 2010</a>(5)</li>
-                                            <li><a href="#">September 2010</a>(245)</li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar-item popular-posts">
-                                        <h3 class="sidebar-item-title">Popular Post</h3>
-                                        <div class="popular-posts-wrap">
-                                            <a href="single.html" class="post-item popular-posts-item">
-                                                <img src="../../../assets/img/post-1-img.jpg" alt="" class="post-bg-img">
-                                                <div class="post-tags">
-                                                    <div class="tag">Mobile</div>
-                                                    <div class="tag">APP</div>
-                                                </div>
-                                                <div class="post-title">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-author post-info-author">
-                                                        <div class="author-image">
-                                                            <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
-                                                        </div>
-                                                        <span>Maya Delia</span>
-                                                    </div>
-                                                    <div class="post-date post-info-date">
-                                                        18 May 2021
-                                                    </div>
-                                                    <div class="post-views post-info-views">
-                                                        3457
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="single.html" class="post-item popular-posts-item">
-                                                <img src="../../../assets/img/post-2-img.jpg" alt="" class="post-bg-img">
-                                                <div class="post-tags">
-                                                    <div class="tag">Mobile</div>
-                                                    <div class="tag">APP</div>
-                                                </div>
-                                                <div class="post-title">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab saepe soluta porro.
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-author post-info-author">
-                                                        <div class="author-image">
-                                                            <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
-                                                        </div>
-                                                        <span>Maya Delia</span>
-                                                    </div>
-                                                    <div class="post-date post-info-date">
-                                                        18 May 2021
-                                                    </div>
-                                                    <div class="post-views post-info-views">
-                                                        3457
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="single.html" class="post-item popular-posts-item">
-                                                <img src="../../../assets/img/post-3-img.jpg" alt="" class="post-bg-img">
-                                                <div class="post-tags">
-                                                    <div class="tag">Mobile</div>
-                                                    <div class="tag">APP</div>
-                                                </div>
-                                                <div class="post-title">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, veniam.
-                                                </div>
-                                                <div class="post-info">
-                                                    <div class="post-author post-info-author">
-                                                        <div class="author-image">
-                                                            <img src="../../../assets/img/author.jpg" alt="" class="image-cover">
-                                                        </div>
-                                                        <span>Maya Delia</span>
-                                                    </div>
-                                                    <div class="post-date post-info-date">
-                                                        18 May 2021
-                                                    </div>
-                                                    <div class="post-views post-info-views">
-                                                        3457
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
