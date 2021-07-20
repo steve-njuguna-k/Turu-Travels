@@ -11,6 +11,7 @@ import { TourDetailsComponent } from './components/tour-details/tour-details.com
 import { HotelDetailsComponent } from './components/hotel-details/hotel-details.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -23,7 +24,7 @@ const routes: Routes = [
   {path: 'tours', component: ToursComponent},
   {path: 'tours/tour-details', component: TourDetailsComponent},
   {path: 'featured', component: FavouritesComponent},
-  {path: '**', component: HomeComponent}
+  {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({
