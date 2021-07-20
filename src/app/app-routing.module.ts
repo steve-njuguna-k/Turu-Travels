@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: 'tours', component: ToursComponent},
   {path: 'tours/tour-details', component: TourDetailsComponent},
   {path: 'featured', component: FavouritesComponent},
-  {path: '**', component: NotFoundComponent}
+  {path: '**', component: HomeComponent}
 ];
 
 @NgModule({
